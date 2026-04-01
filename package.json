@@ -8,7 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "node api/index.mjs",
-    "check-deps": "npm-check"
+    "check-deps": "npm-check",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes --only-changed"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
@@ -29,6 +32,18 @@
     "@types/uuid": "^10.0.0",
     "@vitejs/plugin-react": "^4.6.0",
     "npm-check": "^6.0.1",
-    "vite": "^7.0.5"
+    "vite": "^7.0.5",
+    "storybook": "^10.3.3",
+    "@storybook/react-vite": "^10.3.3",
+    "@chromatic-com/storybook": "^5.1.1",
+    "@storybook/addon-vitest": "^10.3.3",
+    "@storybook/addon-a11y": "^10.3.3",
+    "@storybook/addon-docs": "^10.3.3",
+    "@storybook/addon-onboarding": "^10.3.3",
+    "prop-types": "^15.8.1",
+    "vitest": "^4.1.2",
+    "playwright": "^1.58.2",
+    "@vitest/browser-playwright": "^4.1.2",
+    "@vitest/coverage-v8": "^4.1.2"
   }
 }
