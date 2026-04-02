@@ -1,0 +1,327 @@
+RUN  v4.1.2 /Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-02T20-37-50Z-22f81a8d/project
+
+3:45:34 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+ ❯ |storybook (chromium)| src/routes/contact/ContactImg.stories.tsx (2 tests | 2 failed) 30212ms
+   × Full Bleed 15043ms
+   × Split Panel 15160ms
+ ❯ |storybook (chromium)| src/routes/contact/CareerCta.stories.tsx (2 tests | 2 failed) 30198ms
+   × Default 15153ms
+   × Framed 15031ms
+ ❯ |storybook (chromium)| src/components/Newsletter.stories.tsx (2 tests | 2 failed) 30208ms
+   × Validation Error 15042ms
+   × Submitted 15158ms
+ ❯ |storybook (chromium)| src/components/navigation/Navigation.stories.tsx (2 tests | 2 failed) 30277ms
+   × Logged Out 15153ms
+   × Logged In 15117ms
+ ❯ |storybook (chromium)| src/components/cta/Cta.stories.tsx (2 tests | 2 failed) 30272ms
+   × Logged Out 15131ms
+   × Logged In 15133ms
+ ❯ |storybook (chromium)| src/routes/landing/Feature.stories.tsx (2 tests | 2 failed) 30132ms
+   × Default 15074ms
+   × Framed Section 15043ms
+ ❯ |storybook (chromium)| src/routes/landing/Stats.stories.tsx (2 tests | 2 failed) 30322ms
+   × Default 15154ms
+   × On Canvas 15162ms
+ ❯ |storybook (chromium)| src/routes/faq/FaqList.stories.tsx (2 tests | 2 failed) 32619ms
+   × Collapsed 15010ms
+   × First Item Expanded 17581ms
+ ❯ |storybook (chromium)| src/routes/blog/BlogGrid.stories.tsx (2 tests | 2 failed) 33631ms
+   × Default 15061ms
+   × In Content Shell 18560ms
+
+ Test Files  9 failed (9)
+      Tests  18 failed (18)
+   Start at  03:45:31
+   Duration  96.69s (transform 0ms, setup 229.05s, import 9.37s, tests 277.87s, environment 0ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 18 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |storybook (chromium)| src/components/Newsletter.stories.tsx > Validation Error
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-newsletter--validation-error&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/Newsletter.stories.tsx:18:7
+     16| type Story = StoryObj<typeof meta>;
+     17|
+     18| export const ValidationError: Story = {
+       |       ^
+     19|   play: async ({ canvasElement }) => {
+     20|     const canvas = within(canvasElement);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/18]⎯
+
+ FAIL  |storybook (chromium)| src/components/Newsletter.stories.tsx > Submitted
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-newsletter--submitted&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/Newsletter.stories.tsx:28:7
+     26| };
+     27|
+     28| export const Submitted: Story = {
+       |       ^
+     29|   play: async ({ canvasElement }) => {
+     30|     const canvas = within(canvasElement);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/18]⎯
+
+ FAIL  |storybook (chromium)| src/components/cta/Cta.stories.tsx > Logged Out
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-simple-cta--logged-out&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/cta/Cta.stories.tsx:17:7
+     15| type Story = StoryObj<typeof meta>;
+     16|
+     17| export const LoggedOut: Story = {};
+       |       ^
+     18|
+     19| export const LoggedIn: Story = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/18]⎯
+
+ FAIL  |storybook (chromium)| src/components/cta/Cta.stories.tsx > Logged In
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-simple-cta--logged-in&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/cta/Cta.stories.tsx:19:7
+     17| export const LoggedOut: Story = {};
+     18|
+     19| export const LoggedIn: Story = {
+       |       ^
+     20|   args: {
+     21|     loggedIn: true,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/18]⎯
+
+ FAIL  |storybook (chromium)| src/components/navigation/Navigation.stories.tsx > Logged Out
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-navigation--logged-out&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/navigation/Navigation.stories.tsx:23:7
+     21| type Story = StoryObj<typeof meta>;
+     22|
+     23| export const LoggedOut: Story = {};
+       |       ^
+     24|
+     25| export const LoggedIn: Story = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/18]⎯
+
+ FAIL  |storybook (chromium)| src/components/navigation/Navigation.stories.tsx > Logged In
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-navigation--logged-in&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/navigation/Navigation.stories.tsx:25:7
+     23| export const LoggedOut: Story = {};
+     24|
+     25| export const LoggedIn: Story = {
+       |       ^
+     26|   args: {
+     27|     loggedIn: true,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/faq/FaqList.stories.tsx > Collapsed
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-faqlist--collapsed&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/faq/FaqList.stories.tsx:20:7
+     18| type Story = StoryObj<typeof meta>;
+     19|
+     20| export const Collapsed: Story = {};
+       |       ^
+     21|
+     22| export const FirstItemExpanded: Story = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/faq/FaqList.stories.tsx > First Item Expanded
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-faqlist--first-item-expanded&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/faq/FaqList.stories.tsx:22:7
+     20| export const Collapsed: Story = {};
+     21|
+     22| export const FirstItemExpanded: Story = {
+       |       ^
+     23|   play: async ({ canvasElement }) => {
+     24|     const canvas = within(canvasElement);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/contact/CareerCta.stories.tsx > Default
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-simple-careercta--default&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/contact/CareerCta.stories.tsx:17:7
+     15| type Story = StoryObj<typeof meta>;
+     16|
+     17| export const Default: Story = {};
+       |       ^
+     18|
+     19| export const Framed: Story = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/contact/CareerCta.stories.tsx > Framed
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-simple-careercta--framed&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/contact/CareerCta.stories.tsx:19:7
+     17| export const Default: Story = {};
+     18|
+     19| export const Framed: Story = {
+       |       ^
+     20|   render: () => (
+     21|     <div className="bg-gray-900 px-6 py-12">
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/contact/ContactImg.stories.tsx > Full Bleed
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-simple-contactimg--full-bleed&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/contact/ContactImg.stories.tsx:17:7
+     15| type Story = StoryObj<typeof meta>;
+     16|
+     17| export const FullBleed: Story = {
+       |       ^
+     18|   render: () => (
+     19|     <div className="relative min-h-[28rem] bg-gray-900">
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/contact/ContactImg.stories.tsx > Split Panel
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-simple-contactimg--split-panel&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/contact/ContactImg.stories.tsx:25:7
+     23| };
+     24|
+     25| export const SplitPanel: Story = {
+       |       ^
+     26|   render: () => (
+     27|     <div className="grid min-h-[32rem] bg-gray-900 lg:grid-cols-2">
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/landing/Feature.stories.tsx > Default
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-feature--default&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/landing/Feature.stories.tsx:17:7
+     15| type Story = StoryObj<typeof meta>;
+     16|
+     17| export const Default: Story = {};
+       |       ^
+     18|
+     19| export const FramedSection: Story = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/landing/Feature.stories.tsx > Framed Section
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-feature--framed-section&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/landing/Feature.stories.tsx:19:7
+     17| export const Default: Story = {};
+     18|
+     19| export const FramedSection: Story = {
+       |       ^
+     20|   render: () => (
+     21|     <div className="bg-gray-950 px-6 py-10">
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/landing/Stats.stories.tsx > Default
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-stats--default&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/landing/Stats.stories.tsx:17:7
+     15| type Story = StoryObj<typeof meta>;
+     16|
+     17| export const Default: Story = {};
+       |       ^
+     18|
+     19| export const OnCanvas: Story = {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/landing/Stats.stories.tsx > On Canvas
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-stats--on-canvas&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/landing/Stats.stories.tsx:19:7
+     17| export const Default: Story = {};
+     18|
+     19| export const OnCanvas: Story = {
+       |       ^
+     20|   render: () => (
+     21|     <div className="bg-gray-950 px-6 py-10">
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/blog/BlogGrid.stories.tsx > Default
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-bloggrid--default&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/blog/BlogGrid.stories.tsx:17:7
+     15| type Story = StoryObj<typeof meta>;
+     16|
+     17| export const Default: Story = {
+       |       ^
+     18|   render: () => (
+     19|     <div className="bg-gray-900 px-6 py-10">
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/18]⎯
+
+ FAIL  |storybook (chromium)| src/routes/blog/BlogGrid.stories.tsx > In Content Shell
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-bloggrid--in-content-shell&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/blog/BlogGrid.stories.tsx:25:7
+     23| };
+     24|
+     25| export const InContentShell: Story = {
+       |       ^
+     26|   render: () => (
+     27|     <div className="bg-gray-950 px-6 py-12">
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/18]⎯
