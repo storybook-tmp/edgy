@@ -28,6 +28,11 @@ const playwrightProviderOptions =
 export default defineConfig({
   base: "/",
   plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "#.storybook/preview": path.join(dirname, ".storybook/preview.tsx"),
+    },
+  },
   server: {
     historyApiFallback: true,
   },
