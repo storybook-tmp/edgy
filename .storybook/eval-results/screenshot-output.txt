@@ -1,0 +1,8 @@
+RUN  v4.1.2 /Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-02T18-39-20Z-77252809/project
+
+1:44:45 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+ Test Files  9 passed (9)
+      Tests  18 passed (18)
+   Start at  01:44:44
+   Duration  12.66s (transform 0ms, setup 28.99s, import 1.43s, tests 40.51s, environment 0ms)
