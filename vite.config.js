@@ -27,6 +27,9 @@ const playwrightProviderOptions =
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   base: "/",
+  optimizeDeps: {
+    include: ["@headlessui/react"],
+  },
   plugins: [react(), tailwindcss()],
   server: {
     historyApiFallback: true,
