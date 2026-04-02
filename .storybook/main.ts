@@ -14,6 +14,13 @@ const config: StorybookConfig = {
     '@storybook/addon-onboarding',
   ],
   framework: '@storybook/react-vite',
+  viteFinal: async (config) => {
+    config.define = {
+      ...config.define,
+      'import.meta.env.VITE_CAPTCHA_KEY': JSON.stringify('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'),
+    };
+    return config;
+  },
 };
 
 export default config;
