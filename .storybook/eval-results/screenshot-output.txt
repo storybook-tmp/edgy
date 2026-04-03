@@ -1,0 +1,7 @@
+RUN  v4.1.2 /Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-03T10-44-40Z-d029e379/project
+
+
+ Test Files  9 passed (9)
+      Tests  18 passed (18)
+   Start at  18:01:23
+   Duration  9.28s (transform 0ms, setup 29.58s, import 2.00s, tests 21.95s, environment 0ms)

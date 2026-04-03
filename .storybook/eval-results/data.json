@@ -1,1 +1,308 @@
-{}
+{
+  "schemaVersion": 3,
+  "id": "2026-04-03T10-44-40Z-d029e379",
+  "timestamp": "2026-04-03T10:44:40.000Z",
+  "project": {
+    "name": "edgy",
+    "repo": "https://github.com/storybook-tmp/edgy",
+    "branch": "main",
+    "githubSlug": "storybook-tmp/edgy",
+    "description": "Tailwind, HeadlessUI, React Router"
+  },
+  "variant": {
+    "agent": "codex",
+    "model": "gpt-5.4",
+    "effort": "xhigh"
+  },
+  "prompt": {
+    "name": "setup",
+    "content": "Attention: The following instructions must be followed in order to successfully set up Storybook in this project. Do not skip steps or attempt to do them out of order.\n\nYour goal is to make Storybook fully functional in this project by analyzing the codebase,\nconfiguring the preview with the right decorators, and writing example stories for 9 components.\n\nWork through these steps in order. After each story file, run Vitest to verify it renders.\nIf the test fails, read the error, fix the issue, and re-run until it passes before moving on.\n\n### Step 1: Analyze the codebase\n\nBefore writing any stories, understand what the components need to render:\n\n- Scan the project for context providers, theme systems, routers, stores, and i18n setups.\n  Look at the app's entry point (e.g. `App.tsx`, `main.tsx`, `layout.tsx`) to see what\n  providers wrap the component tree.\n- Identify global CSS or style imports required for components to look correct.\n- Note any path aliases configured in tsconfig or bundler config.\n- Read `.storybook/main.ts` (or `main.js`) to find the `stories` glob patterns.\n  Your story files must match those patterns to be picked up by Storybook.\n\n### Step 2: Configure `.storybook/preview.ts` with decorators\n\nAdd decorators that wrap every story with the providers your components need.\nWithout this, most non-trivial components will crash.\n\nIf the project uses CSF Factory (look for `definePreview` in `.storybook/preview.ts`):\n```ts\n// .storybook/preview.ts\nimport '../src/index.css'; // import global styles\n\nimport { definePreview } from 'storybook/preview';\n\nexport const config = definePreview({\n  decorators: [\n    (Story) => (\n      <ThemeProvider theme={theme}>\n        <MemoryRouter>\n          <Story />\n        </MemoryRouter>\n      </ThemeProvider>\n    ),\n  ],\n});\n```\n\nOtherwise:\n```ts\n// .storybook/preview.ts\nimport '../src/index.css'; // import global styles\n\nconst preview = {\n  decorators: [\n    (Story) => (\n      <ThemeProvider theme={theme}>\n        <MemoryRouter>\n          <Story />\n        </MemoryRouter>\n      </ThemeProvider>\n    ),\n  ],\n};\nexport default preview;\n```\n\nCommon decorators to add:\n- **Theme providers** (e.g. ThemeProvider, MUI ThemeProvider, styled-components, Tailwind)\n- **Router** (e.g. MemoryRouter, BrowserRouter mock)\n- **State stores** (e.g. Redux Provider, Zustand, Jotai)\n- **i18n** (e.g. IntlProvider, I18nextProvider)\n- **Global CSS** — import global stylesheets at the top of preview.ts\n\n### Step 3: Write stories for 9 components\n\nPick 9 real components from the codebase, 3 of each complexity level.\nUse the title prefix `AI Generated/<Complexity>/<ComponentName>` so they are grouped\ntogether in the Storybook sidebar.\n\n**Simple (3 components)** — Presentational with few props, no internal state.\nExamples: Button, Badge, Avatar, Icon, Label, Chip.\nTitle format: `AI Generated/Simple/<ComponentName>`\n\n**Medium (3 components)** — Multiple visual variants or composed from simpler components.\nExamples: Card, Alert, Input, Select, Tooltip, Tabs.\nTitle format: `AI Generated/Medium/<ComponentName>`\n\n**Complex (3 components)** — Internal state, side effects, or deep composition.\nExamples: Modal, DataTable, Form, Dropdown, Accordion, Sidebar.\nTitle format: `AI Generated/Complex/<ComponentName>`\n\nFor each component, create a `<ComponentName>.stories.ts` file next to the component.\nEach file must have at least 2 story exports covering the component's main states.\nMake sure the file location and naming matches the `stories` patterns in `.storybook/main.ts`.\n\nIf the project uses CSF Factory (look for `definePreview` / `config.meta` patterns):\n\nStory format (CSF Factory — this project uses CSF factories):\n```ts\nimport { config } from '#.storybook/preview';\nimport { Button } from './Button';\n\nconst meta = config.meta({\n  title: 'AI Generated/Simple/Button',\n  component: Button,\n});\n\nexport const Default = meta.story({\n  args: {\n    label: 'Click me',\n  },\n});\n\nexport const Disabled = meta.story({\n  args: {\n    label: 'Disabled',\n    disabled: true,\n  },\n});\n```\n\nOtherwise:\n\nStory format (CSF):\n```ts\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from './Button';\n\nconst meta = {\n  title: 'AI Generated/Simple/Button',\n  component: Button,\n} satisfies Meta<typeof Button>;\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    label: 'Click me',\n  },\n};\n\nexport const Disabled: Story = {\n  args: {\n    label: 'Disabled',\n    disabled: true,\n  },\n};\n```\n\nRules:\n- Every named export is a story. Use `args` to set props.\n- Provide all required props via `args` — check the component's types.\n- If a component needs per-story decorators (beyond the global ones), add them in the meta.\n- Do NOT use `any` types. Use the component's prop types for type safety.\n\nReference: https://storybook.js.org/docs/latest/writing-stories\n\n### Step 4: Verify each story with Vitest\n\nAfter writing each story file, immediately verify it:\n\n```bash\nnpx vitest --project storybook <path-to-story-file>\n```\n\n**Self-healing loop — repeat for every story file:**\n1. Write/update the story file\n2. Run `npx vitest --project storybook <path-to-story-file>`\n3. If it fails: read the error output carefully\n   - Missing provider → add a decorator in `.storybook/preview.ts` or in the story meta\n   - Missing prop → add the required prop to `args`\n   - Import error → fix the import path\n   - CSS/asset error → add static dirs or import the stylesheet\n4. Fix the issue and go back to step 2\n5. Once the test passes, move to the next component\n\nAfter all 9 story files pass individually, run the full suite:\n```bash\nnpx vitest --project storybook\n```\n\n### Checklist\n\n- [ ] Analyzed codebase for providers, global styles, and path aliases\n- [ ] Read story patterns from `.storybook/main.ts`\n- [ ] Configured `.storybook/preview.ts` with necessary decorators\n- [ ] Simple component 1: story written and passing\n- [ ] Simple component 2: story written and passing\n- [ ] Simple component 3: story written and passing\n- [ ] Medium component 1: story written and passing\n- [ ] Medium component 2: story written and passing\n- [ ] Medium component 3: story written and passing\n- [ ] Complex component 1: story written and passing\n- [ ] Complex component 2: story written and passing\n- [ ] Complex component 3: story written and passing\n- [ ] Full Vitest suite passes: `npx vitest --project storybook`\n- [ ] Run `npx storybook doctor` to check for common issues (version mismatches, duplicated deps, etc.)"
+  },
+  "baselineCommit": "d6bbf2ace67790a60b73d72077e7b23bfb23a47a",
+  "environment": {
+    "nodeVersion": "v22.21.1",
+    "evalBranch": "kasper/eval-worktrees-chromatic-pr",
+    "evalCommit": "2dda826bf44a0973a233bdb48d95b812985d60ec"
+  },
+  "execution": {
+    "cost": 1.8201495,
+    "duration": 459.369,
+    "turns": 25
+  },
+  "grade": {
+    "buildSuccess": true,
+    "typeCheckErrors": 0,
+    "fileChanges": [
+      {
+        "path": ".storybook/eval-results/data.json",
+        "gitStatus": "M"
+      },
+      {
+        "path": ".storybook/eval-results/prompt.md",
+        "gitStatus": "A"
+      },
+      {
+        "path": ".storybook/preview.tsx",
+        "gitStatus": "M"
+      },
+      {
+        "path": "src/components/Newsletter.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/components/cta/Cta.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/components/navigation/Navigation.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/contact/CareerCta.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/contact/ContactImg.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/faq/FaqList.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/landing/Pricing.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/pricing/PricingComparisonTable.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/user-profile/Profile.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "vite.config.js",
+        "gitStatus": "M"
+      }
+    ],
+    "storybookChanges": [
+      {
+        "path": ".storybook/eval-results/data.json",
+        "gitStatus": "M"
+      },
+      {
+        "path": ".storybook/eval-results/prompt.md",
+        "gitStatus": "A"
+      },
+      {
+        "path": ".storybook/preview.tsx",
+        "gitStatus": "M"
+      },
+      {
+        "path": "src/components/Newsletter.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/components/cta/Cta.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/components/navigation/Navigation.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/contact/CareerCta.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/contact/ContactImg.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/faq/FaqList.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/landing/Pricing.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/pricing/PricingComparisonTable.stories.jsx",
+        "gitStatus": "A"
+      },
+      {
+        "path": "src/routes/user-profile/Profile.stories.jsx",
+        "gitStatus": "A"
+      }
+    ],
+    "baselineGhostStories": {
+      "candidateCount": 20,
+      "total": 20,
+      "passed": 9,
+      "successRate": 0.45
+    },
+    "ghostStories": {
+      "candidateCount": 20,
+      "total": 20,
+      "passed": 19,
+      "successRate": 0.95
+    },
+    "baselinePreviewStories": {
+      "total": 18,
+      "passed": 4,
+      "emptyRenderFailures": 0,
+      "storyFiles": 9
+    },
+    "storyRender": {
+      "total": 18,
+      "passed": 18,
+      "emptyRenderFailures": 0,
+      "storyFiles": 9
+    }
+  },
+  "score": {
+    "score": 1,
+    "breakdown": {
+      "beforeRate": 0.2222222222222222,
+      "afterRate": 1,
+      "gain": 1
+    }
+  },
+  "screenshots": [
+    {
+      "storyFilePath": "src/components/cta/Cta.stories.jsx",
+      "exportName": "LoggedIn",
+      "imagePath": "src/components/cta/Cta.stories.LoggedIn.chromium.png"
+    },
+    {
+      "storyFilePath": "src/components/cta/Cta.stories.jsx",
+      "exportName": "LoggedOut",
+      "imagePath": "src/components/cta/Cta.stories.LoggedOut.chromium.png"
+    },
+    {
+      "storyFilePath": "src/components/navigation/Navigation.stories.jsx",
+      "exportName": "LoggedIn",
+      "imagePath": "src/components/navigation/Navigation.stories.LoggedIn.chromium.png"
+    },
+    {
+      "storyFilePath": "src/components/navigation/Navigation.stories.jsx",
+      "exportName": "LoggedOut",
+      "imagePath": "src/components/navigation/Navigation.stories.LoggedOut.chromium.png"
+    },
+    {
+      "storyFilePath": "src/components/Newsletter.stories.jsx",
+      "exportName": "Default",
+      "imagePath": "src/components/Newsletter.stories.Default.chromium.png"
+    },
+    {
+      "storyFilePath": "src/components/Newsletter.stories.jsx",
+      "exportName": "SuccessfulSubmission",
+      "imagePath": "src/components/Newsletter.stories.SuccessfulSubmission.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/contact/CareerCta.stories.jsx",
+      "exportName": "Default",
+      "imagePath": "src/routes/contact/CareerCta.stories.Default.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/contact/CareerCta.stories.jsx",
+      "exportName": "InConstrainedPage",
+      "imagePath": "src/routes/contact/CareerCta.stories.InConstrainedPage.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/contact/ContactImg.stories.jsx",
+      "exportName": "DesktopSplitLayout",
+      "imagePath": "src/routes/contact/ContactImg.stories.DesktopSplitLayout.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/contact/ContactImg.stories.jsx",
+      "exportName": "MobileCrop",
+      "imagePath": "src/routes/contact/ContactImg.stories.MobileCrop.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/faq/FaqList.stories.jsx",
+      "exportName": "Collapsed",
+      "imagePath": "src/routes/faq/FaqList.stories.Collapsed.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/faq/FaqList.stories.jsx",
+      "exportName": "FirstAnswerExpanded",
+      "imagePath": "src/routes/faq/FaqList.stories.FirstAnswerExpanded.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/landing/Pricing.stories.jsx",
+      "exportName": "LoggedIn",
+      "imagePath": "src/routes/landing/Pricing.stories.LoggedIn.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/landing/Pricing.stories.jsx",
+      "exportName": "LoggedOut",
+      "imagePath": "src/routes/landing/Pricing.stories.LoggedOut.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/pricing/PricingComparisonTable.stories.jsx",
+      "exportName": "LoggedIn",
+      "imagePath": "src/routes/pricing/PricingComparisonTable.stories.LoggedIn.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/pricing/PricingComparisonTable.stories.jsx",
+      "exportName": "LoggedOut",
+      "imagePath": "src/routes/pricing/PricingComparisonTable.stories.LoggedOut.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/user-profile/Profile.stories.jsx",
+      "exportName": "DeleteConfirmationOpen",
+      "imagePath": "src/routes/user-profile/Profile.stories.DeleteConfirmationOpen.chromium.png"
+    },
+    {
+      "storyFilePath": "src/routes/user-profile/Profile.stories.jsx",
+      "exportName": "Overview",
+      "imagePath": "src/routes/user-profile/Profile.stories.Overview.chromium.png"
+    }
+  ],
+  "transcript": [],
+  "artifacts": {
+    "buildOutput": {
+      "path": ".storybook/eval-results/build-output.txt",
+      "success": true
+    },
+    "typecheckOutput": {
+      "path": ".storybook/eval-results/typecheck-output.txt",
+      "errorCount": 0
+    },
+    "screenshotOutput": {
+      "path": ".storybook/eval-results/screenshot-output.txt",
+      "attempted": true,
+      "success": true
+    }
+  },
+  "docs": {
+    "transcript": {
+      "prompt": "Attention: The following instructions must be followed in order to successfully set up Storybook in this project. Do not skip steps or attempt to do them out of order.\n\nYour goal is to make Storybook fully functional in this project by analyzing the codebase,\nconfiguring the preview with the right decorators, and writing example stories for 9 components.\n\nWork through these steps in order. After each story file, run Vitest to verify it renders.\nIf the test fails, read the error, fix the issue, and re-run until it passes before moving on.\n\n### Step 1: Analyze the codebase\n\nBefore writing any stories, understand what the components need to render:\n\n- Scan the project for context providers, theme systems, routers, stores, and i18n setups.\n  Look at the app's entry point (e.g. `App.tsx`, `main.tsx`, `layout.tsx`) to see what\n  providers wrap the component tree.\n- Identify global CSS or style imports required for components to look correct.\n- Note any path aliases configured in tsconfig or bundler config.\n- Read `.storybook/main.ts` (or `main.js`) to find the `stories` glob patterns.\n  Your story files must match those patterns to be picked up by Storybook.\n\n### Step 2: Configure `.storybook/preview.ts` with decorators\n\nAdd decorators that wrap every story with the providers your components need.\nWithout this, most non-trivial components will crash.\n\nIf the project uses CSF Factory (look for `definePreview` in `.storybook/preview.ts`):\n```ts\n// .storybook/preview.ts\nimport '../src/index.css'; // import global styles\n\nimport { definePreview } from 'storybook/preview';\n\nexport const config = definePreview({\n  decorators: [\n    (Story) => (\n      <ThemeProvider theme={theme}>\n        <MemoryRouter>\n          <Story />\n        </MemoryRouter>\n      </ThemeProvider>\n    ),\n  ],\n});\n```\n\nOtherwise:\n```ts\n// .storybook/preview.ts\nimport '../src/index.css'; // import global styles\n\nconst preview = {\n  decorators: [\n    (Story) => (\n      <ThemeProvider theme={theme}>\n        <MemoryRouter>\n          <Story />\n        </MemoryRouter>\n      </ThemeProvider>\n    ),\n  ],\n};\nexport default preview;\n```\n\nCommon decorators to add:\n- **Theme providers** (e.g. ThemeProvider, MUI ThemeProvider, styled-components, Tailwind)\n- **Router** (e.g. MemoryRouter, BrowserRouter mock)\n- **State stores** (e.g. Redux Provider, Zustand, Jotai)\n- **i18n** (e.g. IntlProvider, I18nextProvider)\n- **Global CSS** — import global stylesheets at the top of preview.ts\n\n### Step 3: Write stories for 9 components\n\nPick 9 real components from the codebase, 3 of each complexity level.\nUse the title prefix `AI Generated/<Complexity>/<ComponentName>` so they are grouped\ntogether in the Storybook sidebar.\n\n**Simple (3 components)** — Presentational with few props, no internal state.\nExamples: Button, Badge, Avatar, Icon, Label, Chip.\nTitle format: `AI Generated/Simple/<ComponentName>`\n\n**Medium (3 components)** — Multiple visual variants or composed from simpler components.\nExamples: Card, Alert, Input, Select, Tooltip, Tabs.\nTitle format: `AI Generated/Medium/<ComponentName>`\n\n**Complex (3 components)** — Internal state, side effects, or deep composition.\nExamples: Modal, DataTable, Form, Dropdown, Accordion, Sidebar.\nTitle format: `AI Generated/Complex/<ComponentName>`\n\nFor each component, create a `<ComponentName>.stories.ts` file next to the component.\nEach file must have at least 2 story exports covering the component's main states.\nMake sure the file location and naming matches the `stories` patterns in `.storybook/main.ts`.\n\nIf the project uses CSF Factory (look for `definePreview` / `config.meta` patterns):\n\nStory format (CSF Factory — this project uses CSF factories):\n```ts\nimport { config } from '#.storybook/preview';\nimport { Button } from './Button';\n\nconst meta = config.meta({\n  title: 'AI Generated/Simple/Button',\n  component: Button,\n});\n\nexport const Default = meta.story({\n  args: {\n    label: 'Click me',\n  },\n});\n\nexport const Disabled = meta.story({\n  args: {\n    label: 'Disabled',\n    disabled: true,\n  },\n});\n```\n\nOtherwise:\n\nStory format (CSF):\n```ts\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from './Button';\n\nconst meta = {\n  title: 'AI Generated/Simple/Button',\n  component: Button,\n} satisfies Meta<typeof Button>;\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    label: 'Click me',\n  },\n};\n\nexport const Disabled: Story = {\n  args: {\n    label: 'Disabled',\n    disabled: true,\n  },\n};\n```\n\nRules:\n- Every named export is a story. Use `args` to set props.\n- Provide all required props via `args` — check the component's types.\n- If a component needs per-story decorators (beyond the global ones), add them in the meta.\n- Do NOT use `any` types. Use the component's prop types for type safety.\n\nReference: https://storybook.js.org/docs/latest/writing-stories\n\n### Step 4: Verify each story with Vitest\n\nAfter writing each story file, immediately verify it:\n\n```bash\nnpx vitest --project storybook <path-to-story-file>\n```\n\n**Self-healing loop — repeat for every story file:**\n1. Write/update the story file\n2. Run `npx vitest --project storybook <path-to-story-file>`\n3. If it fails: read the error output carefully\n   - Missing provider → add a decorator in `.storybook/preview.ts` or in the story meta\n   - Missing prop → add the required prop to `args`\n   - Import error → fix the import path\n   - CSS/asset error → add static dirs or import the stylesheet\n4. Fix the issue and go back to step 2\n5. Once the test passes, move to the next component\n\nAfter all 9 story files pass individually, run the full suite:\n```bash\nnpx vitest --project storybook\n```\n\n### Checklist\n\n- [ ] Analyzed codebase for providers, global styles, and path aliases\n- [ ] Read story patterns from `.storybook/main.ts`\n- [ ] Configured `.storybook/preview.ts` with necessary decorators\n- [ ] Simple component 1: story written and passing\n- [ ] Simple component 2: story written and passing\n- [ ] Simple component 3: story written and passing\n- [ ] Medium component 1: story written and passing\n- [ ] Medium component 2: story written and passing\n- [ ] Medium component 3: story written and passing\n- [ ] Complex component 1: story written and passing\n- [ ] Complex component 2: story written and passing\n- [ ] Complex component 3: story written and passing\n- [ ] Full Vitest suite passes: `npx vitest --project storybook`\n- [ ] Run `npx storybook doctor` to check for common issues (version mismatches, duplicated deps, etc.)",
+      "promptTokenCount": 1635,
+      "promptCost": 0,
+      "messages": [
+        {
+          "type": "system",
+          "subtype": "init",
+          "agent": "Codex",
+          "model": "gpt-5.4",
+          "tools": [],
+          "mcp_servers": [],
+          "cwd": "",
+          "ms": 0
+        },
+        {
+          "type": "result",
+          "subtype": "success",
+          "duration_ms": 459369,
+          "duration_api_ms": 0,
+          "num_turns": 25,
+          "total_cost_usd": 1.8201495,
+          "ms": 0
+        }
+      ]
+    }
+  }
+}
