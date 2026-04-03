@@ -1,6 +1,21 @@
 import type { Preview } from '@storybook/react-vite';
+import { MemoryRouter } from 'react-router-dom';
+import { initialize, mswLoader } from 'msw-storybook-addon';
+import '../src/core-ui/index.css';
+
+initialize({
+  onUnhandledRequest: 'bypass',
+});
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <MemoryRouter>
+        <Story />
+      </MemoryRouter>
+    ),
+  ],
+  loaders: [mswLoader],
   parameters: {
     controls: {
       matchers: {
