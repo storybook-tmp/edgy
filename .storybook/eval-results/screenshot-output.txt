@@ -1,0 +1,130 @@
+[1m[46m RUN [49m[22m [36mv4.1.2 [39m[90m/Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-03T11-28-58Z-167f339c/project[39m
+
+[90mstdout[2m | src/components/cta/Cta.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/components/cta/Cta.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/components/cta/Cta.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/components/cta/Cta.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/components/cta/Cta.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mClient ID: fe8428c8-326c-4f51-8cac-259b59360f9b (nested)
+[90mstdout[2m | src/components/NotFound.stories.jsx[2m > [22m[2mDefault
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/components/NotFound.stories.jsx[2m > [22m[2mDefault
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/components/NotFound.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/components/NotFound.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/components/NotFound.stories.jsx[2m > [22m[2mDefault
+[22m[39mClient ID: 8d8562c8-2753-4741-9a2d-b2b724013467 (nested)
+[90mstdout[2m | src/components/Newsletter.stories.jsx[2m > [22m[2mDefault
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/components/Newsletter.stories.jsx[2m > [22m[2mDefault
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/components/Newsletter.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/components/Newsletter.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/components/Newsletter.stories.jsx[2m > [22m[2mDefault
+[22m[39mClient ID: ff9b9962-465e-40e4-a1c8-5ae89f0756d0 (nested)
+[90mstdout[2m | src/components/footer/Footer.stories.jsx[2m > [22m[2mDefault
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/components/footer/Footer.stories.jsx[2m > [22m[2mDefault
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/components/footer/Footer.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/components/footer/Footer.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/components/footer/Footer.stories.jsx[2m > [22m[2mDefault
+[22m[39mClient ID: d5aec697-6ba0-4777-9cd5-8ef4f8d40d64 (nested)
+[90mstdout[2m | src/routes/blog/Blog.stories.jsx[2m > [22m[2mDefault
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/routes/blog/Blog.stories.jsx[2m > [22m[2mDefault
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/routes/blog/Blog.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/routes/blog/Blog.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/routes/blog/Blog.stories.jsx[2m > [22m[2mDefault
+[22m[39mClient ID: a04eb5e6-d975-433b-a1de-813590d00df4 (nested)
+[90mstdout[2m | src/routes/landing/Hero.stories.jsx[2m > [22m[2mDefault
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/routes/landing/Hero.stories.jsx[2m > [22m[2mDefault
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/routes/landing/Hero.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/routes/landing/Hero.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/routes/landing/Hero.stories.jsx[2m > [22m[2mDefault
+[22m[39mClient ID: 2347c949-2c3f-4ca3-8e19-131df82a1279 (nested)
+[90mstdout[2m | src/routes/landing/Testimonials.stories.jsx[2m > [22m[2mDefault
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/routes/landing/Testimonials.stories.jsx[2m > [22m[2mDefault
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/routes/landing/Testimonials.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/routes/landing/Testimonials.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/routes/landing/Testimonials.stories.jsx[2m > [22m[2mDefault
+[22m[39mClient ID: effb5645-33a9-4e61-a03d-867d0f4c2852 (nested)
+[90mstdout[2m | src/routes/landing/Landing.stories.jsx[2m > [22m[2mDefault
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/routes/landing/Landing.stories.jsx[2m > [22m[2mDefault
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/routes/landing/Landing.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/routes/landing/Landing.stories.jsx[2m > [22m[2mDefault
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/routes/landing/Landing.stories.jsx[2m > [22m[2mDefault
+[22m[39mClient ID: 173d083c-b8ae-4e9c-969d-4df1e23eef5a (nested)
+[90mstdout[2m | src/components/navigation/Navigation.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | src/components/navigation/Navigation.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | src/components/navigation/Navigation.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | src/components/navigation/Navigation.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | src/components/navigation/Navigation.stories.jsx[2m > [22m[2mLogged Out
+[22m[39mClient ID: 43950c52-a712-4ec8-a60c-467ae7965fee (nested)
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/NotFound.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 2324[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 2322[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/landing/Testimonials.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 2732[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 2730[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/Newsletter.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 2732[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 2730[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/landing/Hero.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 2732[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 2731[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/footer/Footer.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 2734[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 2733[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/blog/Blog.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 2770[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 2769[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/cta/Cta.stories.jsx [2m([22m[2m2 tests[22m[2m)[22m[33m 3036[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged Out [33m 2723[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged In [33m 312[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/navigation/Navigation.stories.jsx [2m([22m[2m2 tests[22m[2m)[22m[33m 3088[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged Out [33m 2731[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged In [33m 356[2mms[22m[39m
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63315/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63315/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: df7fdc5a-169f-4740-aa53-235883222c67 (nested)
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/landing/Landing.stories.jsx [2m([22m[2m2 tests[22m[2m)[22m[33m 3822[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 2770[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged In [33m 1050[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/landing/Feature.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 725[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 724[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m10 passed[39m[22m[90m (10)[39m
+[2m      Tests [22m [1m[32m13 passed[39m[22m[90m (13)[39m
+[2m   Start at [22m 18:38:25
+[2m   Duration [22m 9.79s[2m (transform 0ms, setup 29.26s, import 1.02s, tests 26.69s, environment 0ms)[22m
