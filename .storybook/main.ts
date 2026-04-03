@@ -14,6 +14,13 @@ const config: StorybookConfig = {
     '@storybook/addon-onboarding',
   ],
   framework: '@storybook/react-vite',
+  staticDirs: ['../public'],
+  env: (config) => ({
+    ...config,
+    VITE_CAPTCHA_KEY: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+    VITE_SERVER_URL: 'http://localhost:3000/verify-recaptcha',
+    VITE_AIRTABLE_SERVER_URL: 'http://localhost:3000/api/users',
+  }),
 };
 
 export default config;

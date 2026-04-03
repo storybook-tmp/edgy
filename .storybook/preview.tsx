@@ -1,7 +1,26 @@
 import type { Preview } from '@storybook/react-vite';
+import { BrowserRouter } from 'react-router-dom';
+import { initialize, mswLoader } from 'msw-storybook-addon';
+import { mswHandlers } from './msw-handlers';
+import '../src/core-ui/index.css';
+
+initialize({
+  onUnhandledRequest: 'bypass',
+});
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <BrowserRouter>
+        <Story />
+      </BrowserRouter>
+    ),
+  ],
+  loaders: [mswLoader],
   parameters: {
+    msw: {
+      handlers: mswHandlers,
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
