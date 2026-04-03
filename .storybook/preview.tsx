@@ -1,7 +1,27 @@
 import type { Preview } from '@storybook/react-vite';
+import { initialize, mswLoader } from 'msw-storybook-addon';
+import MockDate from 'mockdate';
+import { BrowserRouter } from 'react-router-dom';
+import '../src/core-ui/index.css';
+import { mswHandlers } from './msw-handlers';
+
+initialize({
+  onUnhandledRequest: 'bypass',
+});
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <BrowserRouter>
+        <Story />
+      </BrowserRouter>
+    ),
+  ],
+  loaders: [mswLoader],
   parameters: {
+    msw: {
+      handlers: mswHandlers,
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -11,6 +31,9 @@ const preview: Preview = {
     a11y: {
       test: 'todo',
     },
+  },
+  async beforeEach() {
+    MockDate.set('2024-04-01T12:00:00Z');
   },
 };
 
