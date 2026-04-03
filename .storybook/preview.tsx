@@ -1,6 +1,22 @@
 import type { Preview } from '@storybook/react-vite';
+import { MemoryRouter } from 'react-router-dom';
+import { initialize, mswLoader } from 'msw-storybook-addon';
+import { mswHandlers } from './msw-handlers';
+import '../src/core-ui/index.css';
+
+initialize({
+  onUnhandledRequest: 'bypass',
+});
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <MemoryRouter>
+        <Story />
+      </MemoryRouter>
+    ),
+  ],
+  loaders: [mswLoader],
   parameters: {
     controls: {
       matchers: {
@@ -10,6 +26,9 @@ const preview: Preview = {
     },
     a11y: {
       test: 'todo',
+    },
+    msw: {
+      handlers: mswHandlers,
     },
   },
 };
