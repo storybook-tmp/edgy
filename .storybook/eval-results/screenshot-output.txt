@@ -1,0 +1,1569 @@
+RUN  v4.1.2 /Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-02T18-54-51Z-744a51ba/project
+
+2:02:55 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+ ❯ |storybook (chromium)| src/routes/pricing/PricingComparisonTable.stories.jsx (2 tests | 1 failed) 2186ms
+   × Logged In 56ms
+
+ Test Files  1 failed | 8 passed (9)
+      Tests  1 failed | 17 passed (18)
+   Start at  02:02:55
+   Duration  6.04s (transform 0ms, setup 14.58s, import 646ms, tests 19.52s, environment 0ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |storybook (chromium)| src/routes/pricing/PricingComparisonTable.stories.jsx > Logged In
+TestingLibraryElementError: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-pricingcomparisontable--logged-in&addonPanel=storybook/interactions/panel[39m
+
+Unable to find an accessible element with the role "table" and name `/pricing plan comparison/i`
+
+Here are the accessible roles:
+
+  heading:
+
+  Name "Standard":
+  <h2
+    class="text-lg leading-6 font-medium text-gray-900"
+  />
+
+  Name "Premium":
+  <h2
+    class="text-lg leading-6 font-medium text-gray-900"
+  />
+
+  Name "Business":
+  <h2
+    class="text-lg leading-6 font-medium text-gray-900"
+  />
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  <p
+    class="mt-4"
+  />
+
+  Name "":
+  <p
+    class="mt-4 text-sm text-gray-500"
+  />
+
+  Name "":
+  <p
+    class="mt-4"
+  />
+
+  Name "":
+  <p
+    class="mt-4 text-sm text-gray-500"
+  />
+
+  Name "":
+  <p
+    class="mt-4"
+  />
+
+  Name "":
+  <p
+    class="mt-4 text-sm text-gray-500"
+  />
+
+  --------------------------------------------------
+  link:
+
+  Name "Buy Standard":
+  <a
+    class="block w-full bg-indigo-600 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:to-pink-600"
+    data-discover="true"
+    href="/profile"
+  />
+
+  Name "Buy Standard":
+  <a
+    class="block w-full bg-indigo-600 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:to-pink-600"
+    data-discover="true"
+    href="/profile"
+  />
+
+  Name "Buy Premium":
+  <a
+    class="block w-full bg-indigo-600 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:to-pink-600"
+    data-discover="true"
+    href="/profile"
+  />
+
+  Name "Buy Premium":
+  <a
+    class="block w-full bg-indigo-600 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:to-pink-600"
+    data-discover="true"
+    href="/profile"
+  />
+
+  Name "Buy Business":
+  <a
+    class="block w-full bg-indigo-600 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:to-pink-600"
+    data-discover="true"
+    href="/profile"
+  />
+
+  Name "Buy Business":
+  <a
+    class="block w-full bg-indigo-600 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:to-pink-600"
+    data-discover="true"
+    href="/profile"
+  />
+
+  --------------------------------------------------
+  table:
+
+  Name "Features":
+  <table
+    class="w-full"
+  />
+
+  Name "Reporting":
+  <table
+    class="w-full"
+  />
+
+  Name "Support":
+  <table
+    class="w-full"
+  />
+
+  Name "Features":
+  <table
+    class="w-full"
+  />
+
+  Name "Reporting":
+  <table
+    class="w-full"
+  />
+
+  Name "Support":
+  <table
+    class="w-full"
+  />
+
+  Name "Features":
+  <table
+    class="w-full"
+  />
+
+  Name "Reporting":
+  <table
+    class="w-full"
+  />
+
+  Name "Support":
+  <table
+    class="w-full"
+  />
+
+  --------------------------------------------------
+  caption:
+
+  Name "Features":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Reporting":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Support":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Features":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Reporting":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Support":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Features":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Reporting":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  Name "Support":
+  <caption
+    class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+  />
+
+  --------------------------------------------------
+  rowgroup:
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  Name "":
+  <thead />
+
+  Name "":
+  <tbody
+    class="divide-y divide-gray-200"
+  />
+
+  --------------------------------------------------
+  row:
+
+  Name "Feature Included":
+  <tr />
+
+  Name "Organic Follower Growth: Gain real, engaged followers through genuine interactions and personalized strategies, helping you build a loyal community. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Content Optimization: Receive tailored content recommendations to enhance your feed's visual appeal and captivate your target audience. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Hashtag Research: Unlock the potential of strategic hashtags to boost your posts' discoverability and increase your reach. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Community Engagement: Our team proactively engages with your followers, responding to comments, and fostering genuine connections on your behalf. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Monthly Progress Report: Stay updated on your Instagram growth journey with a comprehensive monthly progress report, showcasing key metrics and insights. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Customized Strategy: Receive a tailor-made growth strategy designed specifically for your niche and target audience. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Influencer Outreach: Tap into our network of influencers for collaborations and shout-outs to gain exposure to a broader audience. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Story Management: Maximize the potential of Instagram Stories with engaging content and highlights to captivate your followers. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Competitor Analysis: Gain insights into your competitors' performance to identify opportunities and stay ahead of the curve. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "Follower Growth Analysis: Track your follower count's organic growth over time to understand the impact of our strategies. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Engagement Metrics: Get detailed statistics on likes, comments, and interactions to gauge your content's effectiveness.. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Audience Insights: Understand your audience demographics, interests, and behavior to fine-tune your content strategy. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Post Optimization Suggestions: Receive recommendations for optimizing your post timings and content to maximize engagement. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "24/7 Email Support: Reach out to us anytime, and our dedicated support team will respond promptly to address your queries and concerns. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Priority Queue: As a Standard plan member, your inquiries receive priority handling for faster resolutions. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Priority Growth Campaigns: Participate in priority growth campaigns and strategic collaborations with other businesses to accelerate your growth. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Advanced Content Strategy: Unlock a comprehensive content strategy tailored to your brand's voice and objectives, ensuring consistent and impactful messaging. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Influencer Management: Utilize our expertise in influencer management to build strong partnerships and maximize your brand's exposure. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Exclusive Early Access: Get exclusive early access to new features and updates before they're rolled out to other plans. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "Organic Follower Growth: Gain real, engaged followers through genuine interactions and personalized strategies, helping you build a loyal community. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Content Optimization: Receive tailored content recommendations to enhance your feed's visual appeal and captivate your target audience. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Hashtag Research: Unlock the potential of strategic hashtags to boost your posts' discoverability and increase your reach. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Community Engagement: Our team proactively engages with your followers, responding to comments, and fostering genuine connections on your behalf. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Monthly Progress Report: Stay updated on your Instagram growth journey with a comprehensive monthly progress report, showcasing key metrics and insights. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Customized Strategy: Receive a tailor-made growth strategy designed specifically for your niche and target audience. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Influencer Outreach: Tap into our network of influencers for collaborations and shout-outs to gain exposure to a broader audience. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Story Management: Maximize the potential of Instagram Stories with engaging content and highlights to captivate your followers. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Competitor Analysis: Gain insights into your competitors' performance to identify opportunities and stay ahead of the curve. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "Follower Growth Analysis: Track your follower count's organic growth over time to understand the impact of our strategies. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Engagement Metrics: Get detailed statistics on likes, comments, and interactions to gauge your content's effectiveness.. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Audience Insights: Understand your audience demographics, interests, and behavior to fine-tune your content strategy. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Post Optimization Suggestions: Receive recommendations for optimizing your post timings and content to maximize engagement. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "24/7 Email Support: Reach out to us anytime, and our dedicated support team will respond promptly to address your queries and concerns. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Priority Queue: As a Standard plan member, your inquiries receive priority handling for faster resolutions. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Priority Growth Campaigns: Participate in priority growth campaigns and strategic collaborations with other businesses to accelerate your growth. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Advanced Content Strategy: Unlock a comprehensive content strategy tailored to your brand's voice and objectives, ensuring consistent and impactful messaging. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Influencer Management: Utilize our expertise in influencer management to build strong partnerships and maximize your brand's exposure. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Exclusive Early Access: Get exclusive early access to new features and updates before they're rolled out to other plans. No":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "Organic Follower Growth: Gain real, engaged followers through genuine interactions and personalized strategies, helping you build a loyal community. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Content Optimization: Receive tailored content recommendations to enhance your feed's visual appeal and captivate your target audience. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Hashtag Research: Unlock the potential of strategic hashtags to boost your posts' discoverability and increase your reach. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Community Engagement: Our team proactively engages with your followers, responding to comments, and fostering genuine connections on your behalf. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Monthly Progress Report: Stay updated on your Instagram growth journey with a comprehensive monthly progress report, showcasing key metrics and insights. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Customized Strategy: Receive a tailor-made growth strategy designed specifically for your niche and target audience. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Influencer Outreach: Tap into our network of influencers for collaborations and shout-outs to gain exposure to a broader audience. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Story Management: Maximize the potential of Instagram Stories with engaging content and highlights to captivate your followers. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Competitor Analysis: Gain insights into your competitors' performance to identify opportunities and stay ahead of the curve. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "Follower Growth Analysis: Track your follower count's organic growth over time to understand the impact of our strategies. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Engagement Metrics: Get detailed statistics on likes, comments, and interactions to gauge your content's effectiveness.. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Audience Insights: Understand your audience demographics, interests, and behavior to fine-tune your content strategy. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Post Optimization Suggestions: Receive recommendations for optimizing your post timings and content to maximize engagement. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Feature Included":
+  <tr />
+
+  Name "24/7 Email Support: Reach out to us anytime, and our dedicated support team will respond promptly to address your queries and concerns. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Priority Queue: As a Standard plan member, your inquiries receive priority handling for faster resolutions. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Priority Growth Campaigns: Participate in priority growth campaigns and strategic collaborations with other businesses to accelerate your growth. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Advanced Content Strategy: Unlock a comprehensive content strategy tailored to your brand's voice and objectives, ensuring consistent and impactful messaging. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Influencer Management: Utilize our expertise in influencer management to build strong partnerships and maximize your brand's exposure. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  Name "Exclusive Early Access: Get exclusive early access to new features and updates before they're rolled out to other plans. Yes":
+  <tr
+    class="border-t border-gray-200"
+  />
+
+  --------------------------------------------------
+  columnheader:
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Feature":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  Name "Included":
+  <th
+    class="sr-only"
+    scope="col"
+  />
+
+  --------------------------------------------------
+  rowheader:
+
+  Name "Organic Follower Growth: Gain real, engaged followers through genuine interactions and personalized strategies, helping you build a loyal community.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Content Optimization: Receive tailored content recommendations to enhance your feed's visual appeal and captivate your target audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Hashtag Research: Unlock the potential of strategic hashtags to boost your posts' discoverability and increase your reach.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Community Engagement: Our team proactively engages with your followers, responding to comments, and fostering genuine connections on your behalf.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Monthly Progress Report: Stay updated on your Instagram growth journey with a comprehensive monthly progress report, showcasing key metrics and insights.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Customized Strategy: Receive a tailor-made growth strategy designed specifically for your niche and target audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Influencer Outreach: Tap into our network of influencers for collaborations and shout-outs to gain exposure to a broader audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Story Management: Maximize the potential of Instagram Stories with engaging content and highlights to captivate your followers.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Competitor Analysis: Gain insights into your competitors' performance to identify opportunities and stay ahead of the curve.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Follower Growth Analysis: Track your follower count's organic growth over time to understand the impact of our strategies.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Engagement Metrics: Get detailed statistics on likes, comments, and interactions to gauge your content's effectiveness..":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Audience Insights: Understand your audience demographics, interests, and behavior to fine-tune your content strategy.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Post Optimization Suggestions: Receive recommendations for optimizing your post timings and content to maximize engagement.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "24/7 Email Support: Reach out to us anytime, and our dedicated support team will respond promptly to address your queries and concerns.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Priority Queue: As a Standard plan member, your inquiries receive priority handling for faster resolutions.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Priority Growth Campaigns: Participate in priority growth campaigns and strategic collaborations with other businesses to accelerate your growth.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Advanced Content Strategy: Unlock a comprehensive content strategy tailored to your brand's voice and objectives, ensuring consistent and impactful messaging.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Influencer Management: Utilize our expertise in influencer management to build strong partnerships and maximize your brand's exposure.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Exclusive Early Access: Get exclusive early access to new features and updates before they're rolled out to other plans.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Organic Follower Growth: Gain real, engaged followers through genuine interactions and personalized strategies, helping you build a loyal community.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Content Optimization: Receive tailored content recommendations to enhance your feed's visual appeal and captivate your target audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Hashtag Research: Unlock the potential of strategic hashtags to boost your posts' discoverability and increase your reach.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Community Engagement: Our team proactively engages with your followers, responding to comments, and fostering genuine connections on your behalf.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Monthly Progress Report: Stay updated on your Instagram growth journey with a comprehensive monthly progress report, showcasing key metrics and insights.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Customized Strategy: Receive a tailor-made growth strategy designed specifically for your niche and target audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Influencer Outreach: Tap into our network of influencers for collaborations and shout-outs to gain exposure to a broader audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Story Management: Maximize the potential of Instagram Stories with engaging content and highlights to captivate your followers.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Competitor Analysis: Gain insights into your competitors' performance to identify opportunities and stay ahead of the curve.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Follower Growth Analysis: Track your follower count's organic growth over time to understand the impact of our strategies.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Engagement Metrics: Get detailed statistics on likes, comments, and interactions to gauge your content's effectiveness..":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Audience Insights: Understand your audience demographics, interests, and behavior to fine-tune your content strategy.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Post Optimization Suggestions: Receive recommendations for optimizing your post timings and content to maximize engagement.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "24/7 Email Support: Reach out to us anytime, and our dedicated support team will respond promptly to address your queries and concerns.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Priority Queue: As a Standard plan member, your inquiries receive priority handling for faster resolutions.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Priority Growth Campaigns: Participate in priority growth campaigns and strategic collaborations with other businesses to accelerate your growth.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Advanced Content Strategy: Unlock a comprehensive content strategy tailored to your brand's voice and objectives, ensuring consistent and impactful messaging.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Influencer Management: Utilize our expertise in influencer management to build strong partnerships and maximize your brand's exposure.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Exclusive Early Access: Get exclusive early access to new features and updates before they're rolled out to other plans.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Organic Follower Growth: Gain real, engaged followers through genuine interactions and personalized strategies, helping you build a loyal community.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Content Optimization: Receive tailored content recommendations to enhance your feed's visual appeal and captivate your target audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Hashtag Research: Unlock the potential of strategic hashtags to boost your posts' discoverability and increase your reach.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Community Engagement: Our team proactively engages with your followers, responding to comments, and fostering genuine connections on your behalf.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Monthly Progress Report: Stay updated on your Instagram growth journey with a comprehensive monthly progress report, showcasing key metrics and insights.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Customized Strategy: Receive a tailor-made growth strategy designed specifically for your niche and target audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Influencer Outreach: Tap into our network of influencers for collaborations and shout-outs to gain exposure to a broader audience.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Story Management: Maximize the potential of Instagram Stories with engaging content and highlights to captivate your followers.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Competitor Analysis: Gain insights into your competitors' performance to identify opportunities and stay ahead of the curve.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Follower Growth Analysis: Track your follower count's organic growth over time to understand the impact of our strategies.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Engagement Metrics: Get detailed statistics on likes, comments, and interactions to gauge your content's effectiveness..":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Audience Insights: Understand your audience demographics, interests, and behavior to fine-tune your content strategy.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Post Optimization Suggestions: Receive recommendations for optimizing your post timings and content to maximize engagement.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "24/7 Email Support: Reach out to us anytime, and our dedicated support team will respond promptly to address your queries and concerns.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Priority Queue: As a Standard plan member, your inquiries receive priority handling for faster resolutions.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Priority Growth Campaigns: Participate in priority growth campaigns and strategic collaborations with other businesses to accelerate your growth.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Advanced Content Strategy: Unlock a comprehensive content strategy tailored to your brand's voice and objectives, ensuring consistent and impactful messaging.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Influencer Management: Utilize our expertise in influencer management to build strong partnerships and maximize your brand's exposure.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  Name "Exclusive Early Access: Get exclusive early access to new features and updates before they're rolled out to other plans.":
+  <th
+    class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+    scope="row"
+  />
+
+  --------------------------------------------------
+  cell:
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "No":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  Name "Yes":
+  <td
+    class="py-5 pr-4"
+  />
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+<div>
+  <section
+    class="max-w-2xl mx-auto bg-white py-16 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+  >
+    <section
+      class="space-y-24 lg:hidden"
+    >
+      <section>
+        <section
+          class="px-4 mb-8"
+        >
+          <h2
+            class="text-lg leading-6 font-medium text-gray-900"
+          >
+            Standard
+          </h2>
+          <p
+            class="mt-4"
+          >
+            <span
+              class="text-4xl font-extrabold text-gray-900"
+            >
+              $
+              79
+            </span>
+            <span
+              class="text-base font-medium text-gray-500"
+            >
+              /mo
+            </span>
+          </p>
+          <p
+            class="mt-4 text-sm text-gray-500"
+          >
+            Our Standard plan is perfect for individuals and small businesses looking to kickstart their Instagram growth journey. With authenticity and manual interaction, we ensure that your account receives the attention it deserves.
+          </p>
+          <a
+            class="block w-full bg-indigo-600 border border-transparent rounded-md shadow py-2 text-sm font-semibold text-white text-center hover:to-pink-600"
+            data-discover="true"
+            href="/profile"
+          >
+            Buy 
+            Standard
+          </a>
+        </section>
+        <table
+          class="w-full"
+        >
+          <caption
+            class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left"
+          >
+            Features
+          </caption>
+          <thead>
+            <tr>
+              <th
+                class="sr-only"
+                scope="col"
+              >
+                Feature
+              </th>
+              <th
+                class="sr-only"
+                scope="col"
+              >
+                Included
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="divide-y divide-gray-200"
+          >
+            <tr
+              class="border-t border-gray-200"
+            >
+              <th
+                class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+                scope="row"
+              >
+                Organic Follower Growth: Gain real, engaged followers through genuine interactions and personalized strategies, helping you build a loyal community.
+              </th>
+              <td
+                class="py-5 pr-4"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="ml-auto h-5 w-5 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="sr-only"
+                >
+                  Yes
+                </span>
+              </td>
+            </tr>
+            <tr
+              class="border-t border-gray-200"
+            >
+              <th
+                class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+                scope="row"
+              >
+                Content Optimization: Receive tailored content recommendations to enhance your feed's visual appeal and captivate your target audience.
+              </th>
+              <td
+                class="py-5 pr-4"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="ml-auto h-5 w-5 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="sr-only"
+                >
+                  Yes
+                </span>
+              </td>
+            </tr>
+            <tr
+              class="border-t border-gray-200"
+            >
+              <th
+                class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+                scope="row"
+              >
+                Hashtag Research: Unlock the potential of strategic hashtags to boost your posts' discoverability and increase your reach.
+              </th>
+              <td
+                class="py-5 pr-4"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="ml-auto h-5 w-5 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="sr-only"
+                >
+                  Yes
+                </span>
+              </td>
+            </tr>
+            <tr
+              class="border-t border-gray-200"
+            >
+              <th
+                class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+                scope="row"
+              >
+                Community Engagement: Our team proactively engages with your followers, responding to comments, and fostering genuine connections on your behalf.
+              </th>
+              <td
+                class="py-5 pr-4"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="ml-auto h-5 w-5 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="sr-only"
+                >
+                  Yes
+                </span>
+              </td>
+            </tr>
+            <tr
+              class="border-t border-gray-200"
+            >
+              <th
+                class="py-5 px-4 text-sm font-normal text-gray-500 text-left"
+                scope="row"
+              >
+          ...
+ ❯ getByRole src/routes/pricing/PricingComparisonTable.stories.jsx:37:13
+     35|     ).toHaveAttribute('href', '/profile');
+     36|     await expect(
+     37|       canvas.getByRole('table', { name: /pricing plan comparison/i })
+       |             ^
+     38|     ).toBeInTheDocument();
+     39|   },
+ ❯ node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/673ee179a0c3c0f332f09fe2580218806a6119b6ec052810acd93ff130b0c1c8/sb-vitest/deps/@storybook_addon-vitest_internal_test-utils.js:231:226
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
