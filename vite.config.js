@@ -28,6 +28,15 @@ const playwrightProviderOptions =
 export default defineConfig({
   base: "/",
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: [
+      "@headlessui/react",
+      "react-google-recaptcha",
+      "airtable",
+      "moment",
+      "uuid",
+    ],
+  },
   server: {
     historyApiFallback: true,
   },
