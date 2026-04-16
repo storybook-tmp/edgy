@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "types": ["vite/client"]
+  },
+  "include": [
+    ".storybook/main.ts",
+    ".storybook/preview.tsx",
+    ".storybook/mocks/**/*.jsx",
+    "src/**/*.stories.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "vite.config.js"
+  ],
+  "exclude": [
+    ".storybook/eval-support/**/*",
+    "node_modules",
+    "src/stories/**/*"
+  ]
+}
