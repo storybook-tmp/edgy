@@ -1,0 +1,114 @@
+RUN  v4.1.2 /Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-02T20-23-46Z-4ea6a660/project
+
+3:33:40 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+ ❯ |storybook (chromium)| src/routes/sign-up/SignUpForm.stories.jsx (2 tests | 1 failed) 1214ms
+   × With Existing User 12ms
+ ❯ |storybook (chromium)| src/routes/sign-in/SignInForm.stories.jsx (2 tests | 1 failed) 1555ms
+   × With Failed Retrieval 7ms
+
+ Test Files  2 failed | 7 passed (9)
+      Tests  2 failed | 16 passed (18)
+     Errors  2 errors
+   Start at  03:33:40
+   Duration  5.69s (transform 0ms, setup 14.17s, import 580ms, tests 14.90s, environment 0ms)
+
+
+stderr | src/routes/sign-up/SignUpForm.stories.jsx > With Existing User
+[Error: Uncaught Error: Missing required parameters: sitekey]
+stderr | src/routes/sign-up/SignUpForm.stories.jsx > With Existing User
+The above error occurred in the <ReCAPTCHA> component:
+
+    at ReCAPTCHA2 (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-google-recaptcha.js?v=4f96238f:319:30)
+    at AsyncScriptLoader2 (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-google-recaptcha.js?v=4f96238f:517:28)
+    at AsyncScriptLoader(ReCAPTCHA)
+    at form
+    at SignUpForm (http://localhost:63315/src/routes/sign-up/SignUpForm.jsx:17:38)
+    at hookified (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/chunk-OE6ZNB5S.js?v=ef5a24be:6122:11)
+    at div
+    at Router (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-router-dom.js?v=4f8e7031:6181:13)
+    at MemoryRouter (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-router-dom.js?v=4f8e7031:6103:3)
+    at unboundStoryFn (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/chunk-OE6ZNB5S.js?v=ef5a24be:6732:245)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+stderr | src/routes/sign-in/SignInForm.stories.jsx > With Failed Retrieval
+[Error: Uncaught Error: Missing required parameters: sitekey]
+stderr | src/routes/sign-in/SignInForm.stories.jsx > With Failed Retrieval
+The above error occurred in the <ReCAPTCHA> component:
+
+    at ReCAPTCHA2 (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-google-recaptcha.js?v=4f96238f:319:30)
+    at AsyncScriptLoader2 (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-google-recaptcha.js?v=4f96238f:517:28)
+    at AsyncScriptLoader(ReCAPTCHA)
+    at form
+    at SignInForm (http://localhost:63315/src/routes/sign-in/SignInForm.jsx:17:38)
+    at hookified (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/chunk-OE6ZNB5S.js?v=ef5a24be:6122:11)
+    at div
+    at Router (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-router-dom.js?v=4f8e7031:6181:13)
+    at MemoryRouter (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/react-router-dom.js?v=4f8e7031:6103:3)
+    at unboundStoryFn (http://localhost:63315/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/1807f6f6064c4b0679ea48f6f73205c6ec9e312e2ba17cc64e17eff0a87ae231/sb-vitest/deps/chunk-OE6ZNB5S.js?v=ef5a24be:6732:245)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |storybook (chromium)| src/routes/sign-in/SignInForm.stories.jsx > With Failed Retrieval
+ FAIL  |storybook (chromium)| src/routes/sign-up/SignUpForm.stories.jsx > With Existing User
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-signinform--with-failed-retrieval&addonPanel=storybook/interactions/panel[39m
+
+Missing required parameters: sitekey
+ ❯ pg.<anonymous> ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:270:242
+ ❯ new pg ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:999:134
+ ❯ n6.<anonymous> ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:551:13
+ ❯ new n6 ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:820:31
+ ❯ ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:557:99
+ ❯ ReCAPTCHA2.explicitRender node_modules/react-google-recaptcha/lib/esm/recaptcha.js:102:23
+ ❯ ReCAPTCHA2.componentDidMount node_modules/react-google-recaptcha/lib/esm/recaptcha.js:124:9
+ ❯ commitLayoutEffectOnFiber node_modules/react-dom/cjs/react-dom.development.js:23349:27
+ ❯ commitLayoutMountEffects_complete node_modules/react-dom/cjs/react-dom.development.js:24727:8
+ ❯ commitLayoutEffects_begin node_modules/react-dom/cjs/react-dom.development.js:24713:6
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 2 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Error ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Missing required parameters: sitekey
+ ❯ pg.<anonymous> ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:270:242
+ ❯ new pg ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:999:134
+ ❯ n6.<anonymous> ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:551:13
+ ❯ new n6 ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:820:31
+ ❯ ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:557:99
+ ❯ ReCAPTCHA2.explicitRender node_modules/react-google-recaptcha/lib/esm/recaptcha.js:102:23
+ ❯ ReCAPTCHA2.componentDidUpdate node_modules/react-google-recaptcha/lib/esm/recaptcha.js:127:9
+ ❯ commitLayoutEffectOnFiber node_modules/react-dom/cjs/react-dom.development.js:23377:27
+ ❯ commitLayoutMountEffects_complete node_modules/react-dom/cjs/react-dom.development.js:24727:8
+ ❯ commitLayoutEffects_begin node_modules/react-dom/cjs/react-dom.development.js:24713:6
+
+This error originated in "src/routes/sign-in/SignInForm.stories.jsx" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "Default". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Error ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Missing required parameters: sitekey
+ ❯ pg.<anonymous> ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:270:242
+ ❯ new pg ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:999:134
+ ❯ n6.<anonymous> ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:551:13
+ ❯ new n6 ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:820:31
+ ❯ ../../../../../../../../recaptcha/releases/kUYUkUlSyqkjTSMaN2w3RaOh/recaptcha__en.js:557:99
+ ❯ ReCAPTCHA2.explicitRender node_modules/react-google-recaptcha/lib/esm/recaptcha.js:102:23
+ ❯ ReCAPTCHA2.componentDidUpdate node_modules/react-google-recaptcha/lib/esm/recaptcha.js:127:9
+ ❯ commitLayoutEffectOnFiber node_modules/react-dom/cjs/react-dom.development.js:23377:27
+ ❯ commitLayoutMountEffects_complete node_modules/react-dom/cjs/react-dom.development.js:24727:8
+ ❯ commitLayoutEffects_begin node_modules/react-dom/cjs/react-dom.development.js:24713:6
+
+This error originated in "src/routes/sign-up/SignUpForm.stories.jsx" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "Default". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
