@@ -14,6 +14,13 @@ const config: StorybookConfig = {
     '@storybook/addon-onboarding',
   ],
   framework: '@storybook/react-vite',
+  staticDirs: ['../public'],
+  env: (config) => ({
+    ...config,
+    VITE_AIRTABLE_SERVER_URL: 'https://mock-api.edgy.com/users',
+    VITE_SERVER_URL: 'https://mock-api.edgy.com/verify',
+    VITE_CAPTCHA_KEY: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+  }),
 };
 
 export default config;
