@@ -1,0 +1,78 @@
+RUN  v4.1.2 /Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-02T16-06-38Z-dd5221fd/project
+
+11:17:22 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+Port 63315 is in use, trying another one...
+Port 63316 is in use, trying another one...
+ ❯ |storybook (chromium)| src/routes/sign-in/SignInForm.stories.jsx (2 tests | 1 failed) 2568ms
+   × With Invalid Credentials 139ms
+
+ Test Files  1 failed | 8 passed (9)
+      Tests  1 failed | 17 passed (18)
+     Errors  1 error
+   Start at  23:17:21
+   Duration  9.53s (transform 0ms, setup 20.77s, import 1.27s, tests 30.29s, environment 0ms)
+
+
+stderr | src/routes/sign-in/SignInForm.stories.jsx > With Invalid Credentials
+[Error: Uncaught Error: Missing required parameters: sitekey]
+stderr | src/routes/sign-in/SignInForm.stories.jsx > With Invalid Credentials
+The above error occurred in the <ReCAPTCHA> component:
+
+    at ReCAPTCHA2 (http://localhost:63317/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/5041a00aa61618bfa6076a30d9dc08bb53ec12e08fdc1d081f5ecfc8a5c60ca1/sb-vitest/deps/react-google-recaptcha.js?v=052bf617:319:30)
+    at AsyncScriptLoader2 (http://localhost:63317/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/5041a00aa61618bfa6076a30d9dc08bb53ec12e08fdc1d081f5ecfc8a5c60ca1/sb-vitest/deps/react-google-recaptcha.js?v=052bf617:517:28)
+    at AsyncScriptLoader(ReCAPTCHA)
+    at form
+    at SignInForm (http://localhost:63317/src/routes/sign-in/SignInForm.jsx:17:38)
+    at hookified (http://localhost:63317/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/5041a00aa61618bfa6076a30d9dc08bb53ec12e08fdc1d081f5ecfc8a5c60ca1/sb-vitest/deps/chunk-OE6ZNB5S.js?v=3afb0787:6122:11)
+    at div
+    at div
+    at Router (http://localhost:63317/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/5041a00aa61618bfa6076a30d9dc08bb53ec12e08fdc1d081f5ecfc8a5c60ca1/sb-vitest/deps/react-router-dom.js?v=ea8899bf:6181:13)
+    at MemoryRouter (http://localhost:63317/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/5041a00aa61618bfa6076a30d9dc08bb53ec12e08fdc1d081f5ecfc8a5c60ca1/sb-vitest/deps/react-router-dom.js?v=ea8899bf:6103:3)
+    at unboundStoryFn (http://localhost:63317/node_modules/.cache/storybook/0.0.0-pr-34421-sha-0f73e3a9/5041a00aa61618bfa6076a30d9dc08bb53ec12e08fdc1d081f5ecfc8a5c60ca1/sb-vitest/deps/chunk-OE6ZNB5S.js?v=3afb0787:6732:245)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |storybook (chromium)| src/routes/sign-in/SignInForm.stories.jsx > With Invalid Credentials
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-signinform--with-invalid-credentials&addonPanel=storybook/interactions/panel[39m
+
+Missing required parameters: sitekey
+ ❯ VA.<anonymous> ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:185:388
+ ❯ new VA ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:815:130
+ ❯ Ai.<anonymous> ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:147:138
+ ❯ new Ai ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:1139:500
+ ❯ ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:251:488
+ ❯ ReCAPTCHA2.explicitRender node_modules/react-google-recaptcha/lib/esm/recaptcha.js:102:23
+ ❯ ReCAPTCHA2.componentDidMount node_modules/react-google-recaptcha/lib/esm/recaptcha.js:124:9
+ ❯ commitLayoutEffectOnFiber node_modules/react-dom/cjs/react-dom.development.js:23349:27
+ ❯ commitLayoutMountEffects_complete node_modules/react-dom/cjs/react-dom.development.js:24727:8
+ ❯ commitLayoutEffects_begin node_modules/react-dom/cjs/react-dom.development.js:24713:6
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Error ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Missing required parameters: sitekey
+ ❯ VA.<anonymous> ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:185:388
+ ❯ new VA ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:815:130
+ ❯ Ai.<anonymous> ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:147:138
+ ❯ new Ai ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:1139:500
+ ❯ ../../../../../../../../recaptcha/releases/79clEdOi5xQbrrpL2L8kGmK3/recaptcha__en.js:251:488
+ ❯ ReCAPTCHA2.explicitRender node_modules/react-google-recaptcha/lib/esm/recaptcha.js:102:23
+ ❯ ReCAPTCHA2.componentDidUpdate node_modules/react-google-recaptcha/lib/esm/recaptcha.js:127:9
+ ❯ commitLayoutEffectOnFiber node_modules/react-dom/cjs/react-dom.development.js:23377:27
+ ❯ commitLayoutMountEffects_complete node_modules/react-dom/cjs/react-dom.development.js:24727:8
+ ❯ commitLayoutEffects_begin node_modules/react-dom/cjs/react-dom.development.js:24713:6
+
+This error originated in "src/routes/sign-in/SignInForm.stories.jsx" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "Default". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
