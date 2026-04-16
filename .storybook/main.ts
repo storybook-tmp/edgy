@@ -1,9 +1,16 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import type { StorybookConfig } from '@storybook/react-vite';
+import { mergeConfig } from 'vite';
+
+const dirname = path.dirname(fileURLToPath(import.meta.url));
+const storybookCaptchaUrl = 'https://storybook.edgy.test/api/verify-recaptcha';
+const storybookAirtableUrl = 'https://storybook.edgy.test/api/airtable';
 
 const config: StorybookConfig = {
   stories: [
-    '../src/**/*.mdx',
-    '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    '../src/components/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    '../src/routes/**/*.stories.@(js|jsx|mjs|ts|tsx)',
     './eval-support/*.mdx',
   ],
   addons: [
@@ -14,6 +21,37 @@ const config: StorybookConfig = {
     '@storybook/addon-onboarding',
   ],
   framework: '@storybook/react-vite',
+  staticDirs: ['../public'],
+  async viteFinal(baseConfig) {
+    return mergeConfig(baseConfig, {
+      define: {
+        'import.meta.env.VITE_AIRTABLE_ID': JSON.stringify(
+          'storybook-airtable-base'
+        ),
+        'import.meta.env.VITE_AIRTABLE_KEY': JSON.stringify(
+          'storybook-airtable-key'
+        ),
+        'import.meta.env.VITE_AIRTABLE_SERVER_URL': JSON.stringify(
+          storybookAirtableUrl
+        ),
+        'import.meta.env.VITE_CAPTCHA_KEY': JSON.stringify(
+          'storybook-captcha-key'
+        ),
+        'import.meta.env.VITE_CAPTCHA_SECRET': JSON.stringify(
+          'storybook-captcha-secret'
+        ),
+        'import.meta.env.VITE_SERVER_URL': JSON.stringify(storybookCaptchaUrl),
+      },
+      resolve: {
+        alias: {
+          'react-google-recaptcha': path.resolve(
+            dirname,
+            'MockReCAPTCHA.tsx'
+          ),
+        },
+      },
+    });
+  },
 };
 
 export default config;
