@@ -1,6 +1,15 @@
-import type { Preview } from '@storybook/react-vite';
+import { definePreview } from "@storybook/react-vite";
+import { MemoryRouter } from "react-router-dom";
+import "../src/core-ui/index.css";
 
-const preview: Preview = {
+const preview = definePreview({
+  decorators: [
+    (Story) => (
+      <MemoryRouter>
+        <Story />
+      </MemoryRouter>
+    ),
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -9,9 +18,9 @@ const preview: Preview = {
       },
     },
     a11y: {
-      test: 'todo',
+      test: "todo",
     },
   },
-};
+});
 
 export default preview;
