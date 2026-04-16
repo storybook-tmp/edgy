@@ -1,0 +1,133 @@
+[1m[46m RUN [49m[22m [36mv4.1.2 [39m[90m/Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-03T11-28-58Z-cb8adf1f/project[39m
+
+Port 63315 is in use, trying another one...
+Port 63316 is in use, trying another one...
+Port 63317 is in use, trying another one...
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: 30a75e50-6ad5-415b-a6d0-62f9ba73a13e (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: b63af106-17c9-4c4f-bac0-f7d3702a0f69 (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: e5f35620-f437-4af6-9920-b9c3370aef30 (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: adecc345-0315-49d6-acad-bddb27f203b6 (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: 894897a5-fa9f-4aba-964e-43e42a27ea25 (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: 26e9ed1b-7ec4-428d-8d66-8e0ce2754ce5 (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: 46ec10db-a025-45a0-a35e-dce9934cdbdb (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: 760ea43e-2a3c-4a30-b0ff-9115ec0407c2 (nested)
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: 42f6f7df-4595-466c-9c44-67a4121a2ad3 (nested)
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/faq/Faq.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 3501[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 3500[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/jobs/Jobs.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 3523[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 3520[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/footer/Footer.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 3582[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 3580[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/team/Team.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 3525[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 3524[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/landing/Hero.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 4084[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 4082[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/blog/Blog.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 4049[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 4048[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/components/navigation/Navigation.stories.jsx [2m([22m[2m2 tests[22m[2m)[22m[33m 4992[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged Out [33m 3640[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged In [33m 1351[2mms[22m[39m
+[90mstdout[2m | unknown test
+[22m[39mDocumentation: https://mswjs.io/docs
+[90mstdout[2m | unknown test
+[22m[39mFound an issue? https://github.com/mswjs/msw/issues
+[90mstdout[2m | unknown test
+[22m[39mWorker script URL: http://localhost:63318/mockServiceWorker.js
+[90mstdout[2m | unknown test
+[22m[39mWorker scope: http://localhost:63318/
+[90mstdout[2m | unknown test
+[22m[39mClient ID: fb9fa492-fc94-4592-a6c2-61465c10993a (nested)
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/pricing/Pricing.stories.jsx [2m([22m[2m2 tests[22m[2m)[22m[33m 6683[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 4871[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged In [33m 1810[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/landing/Landing.stories.jsx [2m([22m[2m2 tests[22m[2m)[22m[33m 6671[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 4859[2mms[22m[39m
+   [33m[2m✓[22m[39m Logged In [33m 1811[2mms[22m[39m
+ [32m✓[39m [30m[45m storybook (chromium) [49m[39m src/routes/landing/Feature.stories.jsx [2m([22m[2m1 test[22m[2m)[22m[33m 1302[2mms[22m[39m
+   [33m[2m✓[22m[39m Default [33m 1302[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m10 passed[39m[22m[90m (10)[39m
+[2m      Tests [22m [1m[32m13 passed[39m[22m[90m (13)[39m
+[2m   Start at [22m 18:42:02
+[2m   Duration [22m 21.17s[2m (transform 0ms, setup 56.76s, import 3.84s, tests 41.91s, environment 0ms)[22m
