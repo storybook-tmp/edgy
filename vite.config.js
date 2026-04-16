@@ -28,6 +28,9 @@ const playwrightProviderOptions =
 export default defineConfig({
   base: "/",
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: ["react-router-dom", "@headlessui/react"],
+  },
   server: {
     historyApiFallback: true,
   },
