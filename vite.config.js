@@ -34,6 +34,9 @@ export default defineConfig({
   css: {
     minify: "esbuild",
   },
+  optimizeDeps: {
+    include: ["@headlessui/react"],
+  },
   build: {
     cssCodeSplit: true,
   },
