@@ -1,0 +1,18 @@
+
+npm error code ECONNREFUSED
+npm error errno ECONNREFUSED
+npm error FetchError: request to http://localhost:6001/tsc failed, reason: 
+npm error     at ClientRequest.<anonymous> (/Users/kasperpeulen/.nvm/versions/node/v24.14.1/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+npm error     at ClientRequest.emit (node:events:508:28)
+npm error     at emitErrorEvent (node:_http_client:108:11)
+npm error     at _destroy (node:_http_client:963:9)
+npm error     at onSocketNT (node:_http_client:983:5)
+npm error     at process.processTicksAndRejections (node:internal/process/task_queues:91:21) {
+npm error   code: 'ECONNREFUSED',
+npm error   errno: 'ECONNREFUSED',
+npm error   type: 'system'
+npm error }
+npm error
+npm error If you are behind a proxy, please make sure that the
+npm error 'proxy' config is set properly.  See: 'npm help config'
+npm error A complete log of this run can be found in: /Users/kasperpeulen/.npm/_logs/2026-04-20T10_45_07_438Z-debug-0.log
