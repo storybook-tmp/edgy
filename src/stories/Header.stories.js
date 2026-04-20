@@ -1,9 +1,8 @@
-import { fn } from 'storybook/test';
+import { expect, fn } from 'storybook/test';
 
 import { Header } from './Header';
 
 export default {
-  title: 'Example/Header',
   component: Header,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
@@ -24,6 +23,15 @@ export const LoggedIn = {
       name: 'Jane Doe',
     },
   },
+  play: async ({ canvas }) => {
+    await expect(canvas.getByText(/welcome/i)).toBeVisible();
+    await expect(canvas.getByRole('button', { name: /log out/i })).toBeVisible();
+  },
 };
 
-export const LoggedOut = {};
+export const LoggedOut = {
+  play: async ({ canvas }) => {
+    await expect(canvas.getByRole('button', { name: /log in/i })).toBeVisible();
+    await expect(canvas.getByRole('button', { name: /sign up/i })).toBeVisible();
+  },
+};

@@ -1,10 +1,9 @@
-import { fn } from 'storybook/test';
+import { expect, fn } from 'storybook/test';
 
 import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Example/Button',
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
@@ -26,11 +25,17 @@ export const Primary = {
     primary: true,
     label: 'Button',
   },
+  play: async ({ canvas }) => {
+    await expect(canvas.getByRole('button', { name: /button/i })).toBeVisible();
+  },
 };
 
 export const Secondary = {
   args: {
     label: 'Button',
+  },
+  play: async ({ canvas }) => {
+    await expect(canvas.getByRole('button', { name: /button/i })).toBeEnabled();
   },
 };
 
@@ -39,11 +44,17 @@ export const Large = {
     size: 'large',
     label: 'Button',
   },
+  play: async ({ canvas }) => {
+    await expect(canvas.getByRole('button', { name: /button/i })).toBeVisible();
+  },
 };
 
 export const Small = {
   args: {
     size: 'small',
     label: 'Button',
+  },
+  play: async ({ canvas }) => {
+    await expect(canvas.getByRole('button', { name: /button/i })).toBeVisible();
   },
 };

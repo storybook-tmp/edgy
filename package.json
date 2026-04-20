@@ -30,21 +30,29 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@types/uuid": "^10.0.0",
-    "@vitejs/plugin-react": "^4.6.0",
-    "npm-check": "^6.0.1",
-    "vite": "^7.0.5",
-    "storybook": "0.0.0-pr-34421-sha-8babe7bc",
-    "@storybook/react-vite": "0.0.0-pr-34421-sha-8babe7bc",
     "@chromatic-com/storybook": "^5.1.1",
-    "@storybook/addon-vitest": "0.0.0-pr-34421-sha-8babe7bc",
     "@storybook/addon-a11y": "0.0.0-pr-34421-sha-8babe7bc",
     "@storybook/addon-docs": "0.0.0-pr-34421-sha-8babe7bc",
     "@storybook/addon-onboarding": "0.0.0-pr-34421-sha-8babe7bc",
-    "prop-types": "^15.8.1",
-    "vitest": "^4.1.2",
-    "playwright": "^1.58.2",
+    "@storybook/addon-vitest": "0.0.0-pr-34421-sha-8babe7bc",
+    "@storybook/react-vite": "0.0.0-pr-34421-sha-8babe7bc",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.6.0",
     "@vitest/browser-playwright": "^4.1.2",
-    "@vitest/coverage-v8": "^4.1.2"
+    "@vitest/coverage-v8": "^4.1.2",
+    "mockdate": "^3.0.5",
+    "msw": "^2.13.4",
+    "msw-storybook-addon": "^2.0.7",
+    "npm-check": "^6.0.1",
+    "playwright": "^1.58.2",
+    "prop-types": "^15.8.1",
+    "storybook": "0.0.0-pr-34421-sha-8babe7bc",
+    "vite": "^7.0.5",
+    "vitest": "^4.1.2"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
