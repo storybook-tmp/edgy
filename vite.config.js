@@ -28,6 +28,14 @@ const playwrightProviderOptions =
 export default defineConfig({
   base: "/",
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: ["@headlessui/react"],
+  },
+  resolve: {
+    alias: {
+      "#.storybook/preview": path.join(dirname, ".storybook/preview.tsx"),
+    },
+  },
   server: {
     historyApiFallback: true,
   },
