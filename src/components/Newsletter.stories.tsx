@@ -1,0 +1,38 @@
+import preview from '../../.storybook/preview';
+import { expect } from 'storybook/test';
+import Newsletter from './Newsletter';
+
+const meta = preview.meta({
+  component: Newsletter,
+  tags: ['ai-generated'],
+});
+
+export default meta;
+
+export const Default = meta.story({
+  play: async ({ canvas }) => {
+    await expect(canvas.getByText(/sign up for our newsletter/i)).toBeVisible();
+    await expect(canvas.getByPlaceholderText(/enter your email/i)).toBeVisible();
+    await expect(canvas.getByRole('button', { name: /notify me/i })).toBeVisible();
+  },
+});
+
+export const WithValidEmail = meta.story({
+  play: async ({ canvas, userEvent }) => {
+    const emailInput = canvas.getByPlaceholderText(/enter your email/i);
+    await userEvent.type(emailInput, 'test@example.com');
+    const submitButton = canvas.getByRole('button', { name: /notify me/i });
+    await userEvent.click(submitButton);
+    await expect(canvas.getByText(/hold tight/i)).toBeVisible();
+  },
+});
+
+export const WithInvalidEmail = meta.story({
+  play: async ({ canvas, userEvent }) => {
+    const emailInput = canvas.getByPlaceholderText(/enter your email/i);
+    await userEvent.type(emailInput, 'invalid-email');
+    const submitButton = canvas.getByRole('button', { name: /notify me/i });
+    await userEvent.click(submitButton);
+    await expect(canvas.getByText(/invalid email format/i)).toBeVisible();
+  },
+});
