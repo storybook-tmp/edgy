@@ -45,6 +45,14 @@
     "vitest": "^4.1.2",
     "playwright": "^1.58.2",
     "@vitest/browser-playwright": "^4.1.2",
-    "@vitest/coverage-v8": "^4.1.2"
+    "@vitest/coverage-v8": "^4.1.2",
+    "msw": "^2.7.0",
+    "msw-storybook-addon": "^2.0.4",
+    "mockdate": "^3.0.5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
