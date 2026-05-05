@@ -1,6 +1,18 @@
-import type { Preview } from '@storybook/react-vite';
+import '../src/core-ui/index.css';
 
-const preview: Preview = {
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { definePreview } from '@storybook/react-vite';
+
+export default definePreview({
+  addons: [],
+  decorators: [
+    (Story) => (
+      <BrowserRouter>
+        <Story />
+      </BrowserRouter>
+    ),
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -12,6 +24,4 @@ const preview: Preview = {
       test: 'todo',
     },
   },
-};
-
-export default preview;
+});
