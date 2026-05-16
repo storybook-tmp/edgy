@@ -1,6 +1,16 @@
-import type { Preview } from '@storybook/react-vite';
+import "../src/core-ui/index.css";
 
-const preview: Preview = {
+import { definePreview } from "@storybook/react-vite";
+import { MemoryRouter } from "react-router-dom";
+
+export const config = definePreview({
+  decorators: [
+    (Story, context) => (
+      <MemoryRouter initialEntries={context.parameters.initialEntries ?? ["/"]}>
+        <Story />
+      </MemoryRouter>
+    ),
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -9,9 +19,10 @@ const preview: Preview = {
       },
     },
     a11y: {
-      test: 'todo',
+      test: "todo",
     },
+    layout: "fullscreen",
   },
-};
+});
 
-export default preview;
+export default config;

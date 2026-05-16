@@ -1,0 +1,172 @@
+RUN  v4.1.2 /Users/kasperpeulen/code/storybook/storybook-eval/trials/2026-04-02T20-35-23Z-e7bd4f9b/project
+
+3:47:10 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+ ❯ |storybook (chromium)| src/routes/faq/FaqList.stories.tsx (2 tests | 1 failed) 26584ms
+   × First Answer Expanded 15024ms
+ ❯ |storybook (chromium)| src/routes/contact/ContactImg.stories.tsx (2 tests | 1 failed) 26952ms
+   × Tall Frame 15143ms
+ ❯ |storybook (chromium)| src/components/navigation/Navigation.stories.tsx (2 tests | 1 failed) 26677ms
+   × Logged In 15151ms
+ ❯ |storybook (chromium)| src/components/Newsletter.stories.tsx (2 tests | 1 failed) 26677ms
+   × Successful Submit 15090ms
+ ❯ |storybook (chromium)| src/components/team/Team.stories.tsx (2 tests | 1 failed) 26733ms
+   × Compact Grid 15145ms
+ ❯ |storybook (chromium)| src/routes/blog/BlogGrid.stories.tsx (2 tests | 2 failed) 30195ms
+   × Default 15058ms
+   × Narrow Layout 15130ms
+ ❯ |storybook (chromium)| src/routes/landing/Comparison.stories.tsx (2 tests | 2 failed) 30082ms
+   × Logged Out 15066ms
+   × Logged In 15011ms
+
+ Test Files  7 failed | 2 passed (9)
+      Tests  9 failed | 9 passed (18)
+   Start at  03:47:09
+   Duration  122.91s (transform 0ms, setup 453.56s, import 16.94s, tests 243.66s, environment 0ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 9 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |storybook (chromium)| src/components/Newsletter.stories.tsx > Successful Submit
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-newsletter--successful-submit&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/Newsletter.stories.tsx:12:7
+     10| export const Default = meta.story();
+     11|
+     12| export const SuccessfulSubmit = meta.story({
+       |       ^
+     13|   play: async ({ canvasElement }) => {
+     14|     const canvas = within(canvasElement);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/9]⎯
+
+ FAIL  |storybook (chromium)| src/components/navigation/Navigation.stories.tsx > Logged In
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-navigation--logged-in&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/navigation/Navigation.stories.tsx:16:7
+     14| export const LoggedOut = meta.story();
+     15|
+     16| export const LoggedIn = meta.story({
+       |       ^
+     17|   args: {
+     18|     loggedIn: true,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/9]⎯
+
+ FAIL  |storybook (chromium)| src/components/team/Team.stories.tsx > Compact Grid
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-team--compact-grid&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/components/team/Team.stories.tsx:11:7
+      9| export const Default = meta.story();
+     10|
+     11| export const CompactGrid = meta.story({
+       |       ^
+     12|   decorators: [
+     13|     (Story) => (
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/9]⎯
+
+ FAIL  |storybook (chromium)| src/routes/blog/BlogGrid.stories.tsx > Default
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-bloggrid--default&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/blog/BlogGrid.stories.tsx:9:7
+      7| });
+      8|
+      9| export const Default = meta.story();
+       |       ^
+     10|
+     11| export const NarrowLayout = meta.story({
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/9]⎯
+
+ FAIL  |storybook (chromium)| src/routes/blog/BlogGrid.stories.tsx > Narrow Layout
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-bloggrid--narrow-layout&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/blog/BlogGrid.stories.tsx:11:7
+      9| export const Default = meta.story();
+     10|
+     11| export const NarrowLayout = meta.story({
+       |       ^
+     12|   decorators: [
+     13|     (Story) => (
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/9]⎯
+
+ FAIL  |storybook (chromium)| src/routes/contact/ContactImg.stories.tsx > Tall Frame
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-simple-contactimg--tall-frame&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/contact/ContactImg.stories.tsx:18:7
+     16| export const Default = meta.story();
+     17|
+     18| export const TallFrame = meta.story({
+       |       ^
+     19|   decorators: [
+     20|     (Story) => (
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/9]⎯
+
+ FAIL  |storybook (chromium)| src/routes/faq/FaqList.stories.tsx > First Answer Expanded
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-complex-faqlist--first-answer-expanded&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/faq/FaqList.stories.tsx:12:7
+     10| export const Default = meta.story();
+     11|
+     12| export const FirstAnswerExpanded = meta.story({
+       |       ^
+     13|   play: async ({ canvasElement }) => {
+     14|     const canvas = within(canvasElement);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/9]⎯
+
+ FAIL  |storybook (chromium)| src/routes/landing/Comparison.stories.tsx > Logged Out
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-comparison--logged-out&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/landing/Comparison.stories.tsx:12:7
+     10| });
+     11|
+     12| export const LoggedOut = meta.story();
+       |       ^
+     13|
+     14| export const LoggedIn = meta.story({
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/9]⎯
+
+ FAIL  |storybook (chromium)| src/routes/landing/Comparison.stories.tsx > Logged In
+Error: 
+[34mClick to debug the error directly in Storybook: http://localhost:6006/?path=/story/ai-generated-medium-comparison--logged-in&addonPanel=storybook/interactions/panel[39m
+
+Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ _test src/routes/landing/Comparison.stories.tsx:14:7
+     12| export const LoggedOut = meta.story();
+     13|
+     14| export const LoggedIn = meta.story({
+       |       ^
+     15|   args: {
+     16|     loggedIn: true,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/9]⎯
